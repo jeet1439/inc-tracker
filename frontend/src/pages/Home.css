@@ -11,7 +11,7 @@
   background: linear-gradient(45deg, #000000, #1F32C0);
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .profile {
@@ -29,11 +29,17 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
-.login-button-box {
+.button-box {
   display: flex;
-  gap: 0.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.auth{
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+   align-items: center;
 }
 .auth-btn {
   width: 45px;
@@ -45,14 +51,32 @@
   overflow: hidden;
   cursor: pointer;
 }
-
+.notification{
+  position: relative;
+  display: inline-block;
+}
+.count{
+ position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  pointer-events: none;
+  z-index: 1;
+}
 .auth-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.login-button-box button {
+.button-box button {
   width: 41px;
   height: 41px;
   border-radius: 30px;
