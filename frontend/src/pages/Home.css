@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope";
 }
 
 .background {
@@ -10,8 +11,10 @@
   width: 100vw;
   background: linear-gradient(45deg, #000000, #1F32C0);
   display: flex;
-  justify-content: center;
+  gap: 20px;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile {
@@ -91,4 +94,35 @@
     font-size: 0.9rem;
   }
 
+}
+
+/* StockSlider.css */
+
+.stock-slider-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* padding: 1rem 0; */
+}
+
+.stock-section {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+.stock-slider-container::-webkit-scrollbar {
+  display: none;
+}
+.stock-add{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.stock-add button {
+  all: unset;
+  color: #00b3ffe9;
+  cursor: pointer;
 }

@@ -1,0 +1,37 @@
+ .stock-box {
+  height: 4rem;
+  width: 8rem;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  gap: 0.4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.stock-box img {
+  height: 2.5rem;
+  width: 2.5rem;
+  /* object-fit: none; //cover */
+  border-radius: 50%;
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1;
+  line-height: 1.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.quantity {
+  opacity: 0.9;
+}
