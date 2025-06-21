@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(45deg, #000000, #1F32C0);
   display: flex;
   justify-content: space-around;
   align-items: center;

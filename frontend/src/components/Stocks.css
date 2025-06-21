@@ -1,17 +1,25 @@
  .stock-box {
   height: 4rem;
-  width: 8rem;
+  width: 11rem;
   background: rgba(255, 255, 255, 0.1);
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0.3rem;
+  padding: 1.3rem;
   box-sizing: border-box;
-  gap: 0.4rem;
+  margin-top: 4px;
+  gap: 1.4rem;
   border-radius: 0.5rem;
+  cursor: pointer;
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
-
+.stock-box:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15); /* brighter glass effect */
+  backdrop-filter: blur(6px); /* optional: adds a blur */
+}
 .stock-box img {
   height: 2.5rem;
   width: 2.5rem;

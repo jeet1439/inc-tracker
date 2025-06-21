@@ -1,0 +1,62 @@
+.ledgure-container {
+  padding-top: 10px;
+  color: white;
+  padding-bottom: 65px;
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.asset-card {
+  background: linear-gradient(160deg, #000000, #1F32C0);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.asset-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.asset-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.vendor-name {
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+.asset-value {
+  text-align: right;
+}
+.positive-diff {
+  color: #00ff88; /* or green */
+  font-weight: 300;
+}
+
+.negative-diff {
+  color: #ff4d4d; /* or red */
+  font-weight: 300;
+}
+
+/* Responsive: 3 columns on screens >= 1024px */
+@media (min-width: 1024px) {
+  .asset-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
